@@ -1,4 +1,4 @@
-package com.generation.progetto_base.auth.model;
+package com.generation.progetto_finale.auth.model;
 
 import java.util.ArrayList;
 import java.util.List;

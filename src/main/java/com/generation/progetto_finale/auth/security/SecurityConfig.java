@@ -1,4 +1,4 @@
-package com.generation.progetto_base.auth.security;
+package com.generation.progetto_finale.auth.security;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 

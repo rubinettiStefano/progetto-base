@@ -1,4 +1,4 @@
-package com.generation.progetto_base;
+package com.generation.progetto_finale;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
