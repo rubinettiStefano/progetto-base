@@ -18,6 +18,9 @@ import com.generation.progetto_base.auth.model.Role;
 import com.generation.progetto_base.auth.model.UserEntity;
 import com.generation.progetto_base.auth.repository.UserRepository;
 
+//@Component -> prendi questa classe, istanziala, metti il suo oggetto nell'Application Context
+//tutte le altre sono SPECIALIZZAZIONI di @Component
+
 @Service
 public class CustomUserDetailsService  implements UserDetailsService {
 

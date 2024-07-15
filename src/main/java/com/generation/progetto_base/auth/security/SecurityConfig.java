@@ -35,8 +35,8 @@ public class SecurityConfig {
             authorize -> 
             authorize
             .requestMatchers("/api/auth/**","/swagger-ui/**","/api/v3/api-docs/**").permitAll()
-            // .requestMatchers(HttpMethod.POST,"/api/1").hasRole("USER")
             // .requestMatchers(HttpMethod.POST).hasRole("ADMIN")
+            // .requestMatchers(HttpMethod.GET,"/api/soloperandrea").hasRole("ANDREA")
             .anyRequest().authenticated()
         )
         .httpBasic(withDefaults());
@@ -52,6 +52,7 @@ public class SecurityConfig {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
+    
     @Bean
     PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

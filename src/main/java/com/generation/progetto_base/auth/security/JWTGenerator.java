@@ -18,7 +18,8 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 
 @Component
-public class JWTGenerator {
+public class JWTGenerator 
+{
 	private static final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
 	
 	@Value("${jwtduration}")

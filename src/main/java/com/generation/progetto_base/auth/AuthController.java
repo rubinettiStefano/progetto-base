@@ -40,19 +40,25 @@ public class AuthController {
 
 
     @PostMapping("login")
-    public AuthResponseDto login(@RequestBody CredentialsDto loginDto){
-        Authentication authentication = authenticationManager.authenticate(
+    public AuthResponseDto login(@RequestBody CredentialsDto loginDto)
+    {
+        Authentication user = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                 loginDto.getUsername(),
                 loginDto.getPassword()));
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-        String token = jwtGenerator.generateToken(authentication);
+
+        SecurityContextHolder.getContext().setAuthentication(user);
+
+        String token = jwtGenerator.generateToken(user);
+
         return new AuthResponseDto(token);
     }
 
     @PostMapping("register")
-    public ResponseEntity<String> register(@RequestBody CredentialsDto registerDto) {
-        if (userRepository.existsByUsername(registerDto.getUsername())) {
+    public ResponseEntity<String> register(@RequestBody CredentialsDto registerDto) 
+    {
+        if (userRepository.existsByUsername(registerDto.getUsername())) 
+        {
             return new ResponseEntity<>("Username is taken!", HttpStatus.BAD_REQUEST);
         }
 
