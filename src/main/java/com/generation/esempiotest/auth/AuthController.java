@@ -1,4 +1,4 @@
-package com.generation.progetto_finale.auth;
+package com.generation.esempiotest.auth;
 
 import java.util.Collections;
 
@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.generation.progetto_finale.auth.dto.AuthResponseDto;
-import com.generation.progetto_finale.auth.dto.CredentialsDto;
-import com.generation.progetto_finale.auth.model.Role;
-import com.generation.progetto_finale.auth.model.UserEntity;
-import com.generation.progetto_finale.auth.repository.RoleRepository;
-import com.generation.progetto_finale.auth.repository.UserRepository;
-import com.generation.progetto_finale.auth.security.JWTGenerator;
+import com.generation.esempiotest.auth.dto.AuthResponseDto;
+import com.generation.esempiotest.auth.dto.CredentialsDto;
+import com.generation.esempiotest.auth.model.Role;
+import com.generation.esempiotest.auth.model.UserEntity;
+import com.generation.esempiotest.auth.repository.RoleRepository;
+import com.generation.esempiotest.auth.repository.UserRepository;
+import com.generation.esempiotest.auth.security.JWTGenerator;
 
 @RestController
 @RequestMapping("/auth")

@@ -1,4 +1,4 @@
-package com.generation.progetto_finale;
+package com.generation.esempiotest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

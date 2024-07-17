@@ -1,4 +1,4 @@
-package com.generation.progetto_finale.auth.security;
+package com.generation.esempiotest.auth.security;
 
 
 import java.util.Collection;
@@ -14,9 +14,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.generation.progetto_finale.auth.model.Role;
-import com.generation.progetto_finale.auth.model.UserEntity;
-import com.generation.progetto_finale.auth.repository.UserRepository;
+import com.generation.esempiotest.auth.model.Role;
+import com.generation.esempiotest.auth.model.UserEntity;
+import com.generation.esempiotest.auth.repository.UserRepository;
 
 //@Component -> prendi questa classe, istanziala, metti il suo oggetto nell'Application Context
 //tutte le altre sono SPECIALIZZAZIONI di @Component

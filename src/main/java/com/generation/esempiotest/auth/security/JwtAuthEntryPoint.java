@@ -1,4 +1,4 @@
-package com.generation.progetto_finale.auth.security;
+package com.generation.esempiotest.auth.security;
 
 import java.io.IOException;
 

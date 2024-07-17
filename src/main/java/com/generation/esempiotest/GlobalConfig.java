@@ -1,4 +1,4 @@
-package com.generation.progetto_finale;
+package com.generation.esempiotest;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

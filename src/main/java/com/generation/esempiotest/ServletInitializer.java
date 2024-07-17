@@ -1,4 +1,4 @@
-package com.generation.progetto_finale;
+package com.generation.esempiotest;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

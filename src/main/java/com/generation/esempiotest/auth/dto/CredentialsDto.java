@@ -1,4 +1,4 @@
-package com.generation.progetto_finale.auth.dto;
+package com.generation.esempiotest.auth.dto;
 
 
 import lombok.Data;
